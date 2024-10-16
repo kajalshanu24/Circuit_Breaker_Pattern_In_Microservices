@@ -9,12 +9,13 @@ import org.springframework.web.client.RestTemplate;
 @SpringBootApplication
 @EnableHystrix
 public class BookCatalogApplication {
+
     public static void main(String[] args) {
         SpringApplication.run(BookCatalogApplication.class, args);
     }
 
     @Bean
-    public RestTemplate getRestTemplate(){
+    public RestTemplate getRestTemplate() {
         return new RestTemplate();
     }
 }

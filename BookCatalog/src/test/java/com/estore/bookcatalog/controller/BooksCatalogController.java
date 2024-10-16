@@ -27,7 +27,7 @@ public class BooksCatalogController {
 
     @GetMapping("/book-details")
     public BookCatalogResponse getBooksRatings() {
-        String urlBookService = "http://localhost:8086/book-service/book";
+        String urlBookService = "http://localhost:8090/book-service/book";
         String urlRatingService ="http://localhost:8080/rating-service/rating/";
 
         BookCatalogResponse response = null;
